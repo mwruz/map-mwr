@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+/* VARIABLES  */
+
+:root {
+    --primary-font: "Montserrat", sans-serif;
+}
+
+*,*
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: var(--primary-font);
+}
 
 body {
     margin: 0;
     padding: 0;
     color: #333;
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     padding: 150px 0;
 }
 
@@ -26,7 +47,6 @@ body {
 
 .region-map {
     border-top: 2px solid rgb(124, 181, 236);
-    border-bottom: 2px solid rgb(124, 181, 236);
 }
 
 .wrapper {
@@ -39,14 +59,14 @@ body {
 
 .map-title {
     max-width: 800px;
-    margin-left: 170px;
+    /* margin-left: 170px; */
     margin-bottom: 145px;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.5;
     font-weight: 700;
     letter-spacing: 1px;
     /* color: #333; */
-    color: rgb(124, 181, 236);
+    color: #1873B7;
     display: flex;
     flex-direction: column;
 }
@@ -55,7 +75,7 @@ body {
     width: 150px;
     height: 2px;
     content: "";
-    background-color:rgb(124, 181, 236);
+    background-color:#1873B7;
     margin-top: 15px;
 }
 
@@ -81,23 +101,23 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 235px;
-    height: 55px;
+    width: 220px;
+    height: 50px;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 700;
     letter-spacing: 1px;
-    border: 1px solid rgb(124, 181, 236);
+    border: 1px solid #1873B7;
     border-radius: 4px;
     background-color: transparent;
     transition: all 0.3s ease;
     /* color: #333; */
-    color: rgb(124, 181, 236);
+    color: #1873B7;
 }
 
 .buttons-group button:hover {
     opacity: 0.6;
-    background-color: rgb(124, 181, 236);
+    background-color: #1873B7;
     color: #fff;
 }
 
@@ -107,7 +127,7 @@ body {
 }
 
 .button-active {
-    background-color: rgb(124, 181, 236) !important;
+    background-color: #1873B7 !important;
     color: #fff !important;
 }
 
@@ -179,11 +199,11 @@ path {
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
-    font-size: 46px;
+    font-size: 36px;
     line-height: 1.5;
     font-weight: 700;
     /* color: #333; */
-    color: rgb(124, 181, 236);
+    color: #1873B7;
     text-transform: capitalize;
     letter-spacing: 1px;
     display: flex;
@@ -193,16 +213,128 @@ path {
 }
 
 .region-section::before {
-    width: 350px;
+    width: 250px;
     height: 2px;
     content: "";
-    background-color: rgb(124, 181, 236);
+    background-color: #1873B7;
 }
 
 .region-section::after {
-    width: 350px;
+    width: 250px;
     height: 2px;
     content: "";
-    background-color: rgb(124, 181, 236);
+    background-color: #1873B7;
 }
+
+
+@media screen and (max-width: 1336px){
+    .map-title {
+        margin-left: 15px;
+    }
+}
+
+
+
+/* START USEFUL LINKS  */
+
+.links {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 30px;
+    background-color: #1873B7; 
+}
+
+.links__header,
+.links__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.links__header {
+    margin-bottom: 50px;
+}
+
+.links__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links__card {
+    max-width: 250px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.owl-carousel.links__list .owl-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.links__card span {
+    text-align: center;
+    color: #1873B7;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.links__card-title {
+    display: block;
+    margin: 15px 0;
+    font-size: 16px !important;
+}
+
+.links__card:hover span {
+    opacity: 0.8;
+}
+
+.section-title {
+    /* font-size: 26px; */
+    line-height: 1.5;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+.owl-dots {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white !important;
+    opacity: 0.6;
+}
+
+.owl-dot:not(:last-child) {
+    margin-right: 10px;
+}
+
+.owl-dot.active {
+    background-color: white !important;
+    opacity: 1;
+}
+
+
+.links .region-section::before,
+.links .region-section::after {
+    background-color: #fff;
+}
+/* END OF USEFUL LINKS  */
 
