@@ -9,6 +9,7 @@ $('.links__list').owlCarousel({
   responsive:{
       0:{
           items:1,
+          nav: false
       },
       600:{
           items:2,
@@ -93,19 +94,19 @@ Highcharts.seriesType('mappie', 'pie', {
 
 var data = [
     // state, demVotes, repVotes, libVotes, grnVotes, sumVotes, winner, offset config for pies
-    ['Tashkent', 729547, 1318255, 44467, 9391, 2101660, -1, 'Toshkent'],
-    ['Andijon', 116454, 163387, 18725, 5735, 304301, -1, 'Andijon'],
-    ['Namangan', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Namangan'],
-    ['Ferghana', 1161167, 1252401, 106327, 34345, 2554240, -1, "Farg'ona"],
-    ['Sirdaryo', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Sirdaryo'],
-    ['Jizzakh', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Jizzax'],
-    ['Samarkand', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Samarqand'],
-    ['Kashkadarya', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Qashqadaryo'],
-    ['Surkhandarya', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Surxandaryo'],
-    ['Bukhoro', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Buxoro'],
-    ['Navoi', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Navoiy'],
-    ['Khorezm', 1161167, 1252401, 106327, 34345, 2554240, -1, 'Xorazm'],
-    ['Karakalpakstan', 1161167, 1252401, 106327, 34345, 2554240, -1, "Qoraqalpog'iston"]
+    ['Tashkent', "Чирчиқ-Оҳангарон ирригация тизимлари ҳавза бошқармаси", "Тошкент ш., Роҳат к., 13-уй", "Абдураззоқов Жахонгир Боқижонович", "(71) 295-23-36", "tv.havza@minwater.uz", -1, 'Toshkent'],
+    ['Andijon', "Норин-Қорадарё ирригация тизимлари ҳавза бошқармаси", "Андижон ш., Н.Охунов к., 40а-уй", "Хамидов Хушнудбек Собирович", "(74) 223-55-53", "nq.havza@minwater.uz", -1, 'Andijon'],
+    ['Namangan', "Норин-Сирдарё ирригация тизимлари ҳавза бошқармаси", "Наманган ш., Ҳамроҳ к., 66-уй", "Алматов Фозилжон Абдукадирович", "(69) 227-69-40", "ns.havza@minwater.uz", -1, 'Namangan'],
+    ['Ferghana', "Сирдарё-Сўх ирригация тизимлари ҳавза бошқармаси", "Фарғона ш., Ал-Фарғоний к., 72-уй", "Турсунов Фахриддин Султонович", "(73) 244-67-83", "fv.havza@minwater.uz", -1, "Farg'ona"],
+    ['Sirdaryo', "Қуйи Сирдарё ирригация тизимлари ҳавза бошқармаси", "Гулистон ш., Хондамир к., 127-уй", "Исроилов Шавкат Отамуродович", "(67) 225-00-30", "qs.havza@minwater.uz", -1, 'Sirdaryo'],
+    ['Jizzakh', "Сирдарё-Зарафшон ирригация тизимлари ҳавза бошқармаси", "Жиззах ш., Бешқувур к., 56-уй", "Джураев Шуҳрат Суярқулович", "(72) 226-91-28", "sz.havza@minwater.uz", -1, 'Jizzax'],
+    ['Samarkand', "Зарафшон ирригация тизимлари ҳавза бошқармаси", "Самарқанд ш., Гагарин к., 70-уй", "Раджабов Фарход Валиевич", "(66) 234-44-10", "zar.havza@minwater.uz", -1, 'Samarqand'],
+    ['Kashkadarya', "Аму-Қашқадарё ирригация тизимлари ҳавза бошқармаси", "Қарши ш., И.Каримов к., 81а-уй", "Вакант", "(75) 226-38-47", "aq.havza@minwater.uz", -1, 'Qashqadaryo'],
+    ['Surkhandarya', "Аму-Сурхон ирригация тизимлари ҳавза бошқармаси", "Термиз ш., М.Қаххор к., 19-уй", "Алимов Тўлқин Жўраевич", "(76) 221-73-05", "as.havza@minwater.uz", -1, 'Surxandaryo'],
+    ['Bukhoro', "Аму-Бухоро ирригация тизимлари ҳавза бошқармаси", "Бухоро ш., Б.Нақшбанд к., 297/1-уй", "Файзиллаев Эркин Бахшиллоевич", "(65) 225-09-35", "ab.havza@minwater.uz", -1, 'Buxoro'],
+    ['Navoi', "Қуйи Зарафшон ирригация тизимлари ҳавза бошқармаси", "Навоий ш., А.Навоий к., 24-уй", "Шомуродов Нодир Намозович", "(79) 224-98-31", "qz.havza@minwater.uz", -1, 'Navoiy'],
+    ['Khorezm', "Чапқирғоқ Амударё ирригация тизимлари ҳавза бошқармаси", "Урганч ш., М.Хоразмий к., 1-уй", "Тоиров Одилбек Рахимберганович", "(62) 226-01-35", "xz.havza@minwater.uz", -1, 'Xorazm'],
+    ['Karakalpakstan', "Қорақалпоғистон Республикаси Сув хўжалиги вазирлиги", "Нукус ш., Т.Қайпберганов к., 25-уй", "Усаков Даулетбай Торебаевич", "(61) 224-13-68", "qqr@minwater.uz", -1, "Qoraqalpog'iston"]
   ],
   maxVotes = 0,
   demColor = '#333',
@@ -115,9 +116,9 @@ var data = [
 
 
 // Compute max votes to find relative sizes of bubbles
-Highcharts.each(data, function(row) {
-  maxVotes = Math.max(maxVotes, row[5]);
-});
+// Highcharts.each(data, function(row) {
+//   maxVotes = Math.max(maxVotes, row[5]);
+// });
 
 // Build the chart
 var chart = Highcharts.mapChart('container', {
@@ -196,26 +197,16 @@ var chart = Highcharts.mapChart('container', {
     tooltip: {
       headerFormat: '',
       pointFormatter: function() {
+        var regionType = "Бошлиқ"
+        if(this.id == "Karakalpakstan") regionType="Вазир"
+        else regionType = "Бошлиқ"
         var hoverVotes = this.hoverVotes; // Used by pie only
-        return '<div class="my-div"><b class="map-t">' + this.id + ' </b><br/>' +
-          Highcharts.map([
-            ["Sug'oriladigan yerlar", this.demVotes, demColor],
-            ['Nasos stansiyalari soni', this.repVotes, repColor],
-            ['Kanallar soni', this.libVotes, libColor],
-            ['Daryolar soni', this.grnVotes, grnColor]
-          ].sort(function(a, b) {
-            return b[1] - a[1]; // Sort tooltip by most votes
-          }), function(line) {
-            return '<span style="color:' + line[2] +
-              // Colorized bullet
-              '">\u25CF</span> ' +
-              // Party and votes
-              (line[0] === hoverVotes ? '<b>' : '') +
-              line[0] + ': ' +
-              Highcharts.numberFormat(line[1], 0) +
-              (line[0] === hoverVotes ? '</b>' : '') +
-              '<br/>';
-          }).join('');
+        return '<div class="my-div"><h3 class="map-t">' + this.demVotes+ ' </h3><br/>' +
+          '<b class="item-title">' + regionType + ':' +'</b>' + '<span class="item-value">' + this.libVotes + '</span><br/>'+
+          '<b class="item-title">Телефон:</b>' + '<span class="item-value">' + this.grnVotes + '</span><br/>' +
+          '<b class="item-title">E-mail:</b>' + '<span class="item-value">' + this.sumVotes + '</span><br/>' +
+          '<b class="item-title">Манзил:</b>' + '<span class="item-value">' + this.repVotes + '</span><br/>' 
+
       }
     },
     
