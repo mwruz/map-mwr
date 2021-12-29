@@ -57,6 +57,8 @@ body {
 }
 
 
+
+
 .map-title {
     max-width: 800px;
     /* margin-left: 170px; */
@@ -133,6 +135,7 @@ body {
 
 .map-t {
     font-size: 14px;
+    color: rgba(255, 0, 0, 0.603);
 }
 
 .my-div {
@@ -145,6 +148,7 @@ body {
     align-items: center;
     margin: 0 auto;
 }
+
 
 
 /* 
@@ -230,6 +234,14 @@ path {
 @media screen and (max-width: 1336px){
     .map-title {
         margin-left: 15px;
+    }
+
+    .region-section::before {
+        width: 200px;
+    }
+
+    .region-section::after {
+        width: 200px;
     }
 }
 
